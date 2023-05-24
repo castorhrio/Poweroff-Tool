@@ -1,0 +1,16 @@
+{
+  "name": "poweroff-tool",
+  "productName": "poweroff-tool",
+  "version": "1.0.0",
+  "description": "app to scheduled shutdown system",
+  "main": "main.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&electron ."
+  },
+  "author": "Sybex",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^24.3.1",
+    "toastify-js": "^1.12.0"
+  }
+}
