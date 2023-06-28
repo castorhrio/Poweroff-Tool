@@ -4,7 +4,6 @@
 	Simple reset
 --------------------------*/
 
-
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +16,8 @@
 
 
 html {
+    width: 100vw;
+    height: 100vh;
     background: url('../img/bg.jpg') #dbe4e6;
     overflow: hidden;
 }
@@ -500,7 +501,8 @@ aside {
     padding-bottom: 100px;
 }
 
-a.button {
+a.button,
+a.button2 {
     background-color: #f6a7b3;
 
     background-image: -webkit-linear-gradient(top, #f6a7b3, #f0a3af);
@@ -523,6 +525,9 @@ a.button:hover {
     opacity: 0.9;
 }
 
+a.button2{
+    margin-left: 50px;
+}
 
 /*----------------------------
 	The Demo Footer

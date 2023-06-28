@@ -102,5 +102,4 @@ $(function(){
     $('a.button').click(function(){
         clock.toggleClass('light dark');
     });
-
 });

@@ -3,17 +3,18 @@ const { app, BrowserWindow } = require('electron');
 
 function CreateMainWindow() {
     const mainWindow = new BrowserWindow({
-        title: 'Poweroff Tools',
-        width: 800,
-        height: 600,
+        title: 'Poweroff',
+        width: 600,
+        height: 500,
+        icon: __dirname + './src/img/power.png',
         autoHideMenuBar: true,
-        // resizable: false,
-        // maximizable: false,
+        resizable: false,
+        maximizable: false,
     });
 
-     if (process.env.NODE_ENV === 'development') {
-        mainWindow.webContents.openDevTools();
-    }
+    //  if (process.env.NODE_ENV === 'development') {
+    //     mainWindow.webContents.openDevTools();
+    // }
 
     mainWindow.loadFile(path.join(__dirname, './src/html/index.html'));
 }
